@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Management System</title>
+  <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.t4n9_7ns_ko5BITbhgpE_gHaHa?rs=1&pid=ImgDetMain">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <marquee>“In a hostel, you don’t just share a room; you share stories, laughter, and memories.”</marquee>
+  <div>  <ul><img src="https://www.edecofy.com/blog/wp-content/uploads/2021/02/Institute-Hostel-Management-System-1-1024x538.jpg" width="200px" height="70px" style="justify-content: left;"">
+    
+  </div>
+  <h1>Hostel Management System</h1></ul>
+
+    <nav>
+      <ul>
+        <!--<li><img src="https://www.edecofy.com/blog/wp-content/uploads/2021/02/Institute-Hostel-Management-System-1-1024x538.jpg" width="200px" height="70px"></li>
+      --> <li><a href="#students">Students</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#maintenance">Maintenance</a></li>
+        <li><a href="#fees">Fees</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#contactus">Contactus</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="students">
+      <h2 style="color: blue;">Student Management</h2>
+      <form id="student-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <select id="gender" required>
+          <option value="">Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" id="contact" placeholder="Contact Information" required>
+        <input type="text" id="course" placeholder="Occupation" required>
+        <button type="submit">Add Student</button>
+      </form>
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Contact</th>
+            <th>Course</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Students will be populated here -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="rooms">
+      <h2 style="color: green;">Room Assignment</h2>
+      <div id="room-list">
+        <!-- Room details will be populated here -->
+      </div>
+    </section>
+
+    <section id="maintenance">
+      <h2 style="color: green;">Maintenance Requests</h2>
+      <form id="maintenance-form">
+        <input type="text" id="issue-description" placeholder="Issue Description" required>
+        <input type="text" id="room-number" placeholder="Room Number" required>
+        <button type="submit">Submit Request</button>
+      </form>
+      <div id="maintenance-dashboard">
+        <!-- Maintenance requests will be populated here -->
+      </div>
+    </section>
+
+    <section id="fees">
+      <h2 style="color: green;">Fee Management</h2>
+      <form id="Student-Fee">
+        <input type="text" id="name1" placeholder="enter name"/>
+        <input type="text" id="contact1" placeholder="enter the number"/>
+        <input type="amount" id="amount" placeholder="enter amount"/>
+        <button type="submit">submit</button>
+      </form>
+      <table id="student-table1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>contact</th>
+           <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Students will be populated here -->
+        </tbody>
+      </table>
+      <div id="fee-summary">
+        <!-- Fee details will be populated here -->
+      </div>
+    </section>
+    <section>
+      <h2 id="facilities" style="color: green;">Facilities</h2>
+      <ul style="color: gray;">
+        <li>Lift facility</li>
+        <li>Ac and non Ac Rooms</li>
+        <li>Washing machine Facility</li>
+        <li>Fridge</li>
+        <li>Home Theatre</li>
+        <li>Weekly twice Chicken</li>
+        
+      </ul>
+    </section>
+    <footer style="background-color: lightsteelblue;">
+      <h2 style="background-color: black; color:white;"> Contact Us! </h2>
+      <h3 >Gopi Krishna 6281684289 <a href="https://www.linkedin.com/in/venkata-gopi-krishna-verriboina-2a455a197"/><i class="fa fa-linkedin" aria-hidden="true"></i></a></h3>
+      <h3 >Arun 9948252525 <a href="http://linkedin.com/in/arun-mitapally-312320201"><i class="fa fa-linkedin" aria-hidden="true"></i></a></h3>
+      <h3>Arjun Reddy 9948251433 <a href="https://www.linkedin.com/in/banala-arjun-reddy-765156282"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+     </footer>
+    
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
